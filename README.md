@@ -47,6 +47,8 @@ chmod +x ./*
 ./sipauthserse
 python3 server.py
 ```
+## 关于server.py的使用，可以在终端输入help或者?查看帮助
+
 此时等待手机附着在我们的伪基站上  
 当有设备附着时server.py会有信息提示  
 此时在server.py的终端下输入tmsis指令可以查看附着的设备  
