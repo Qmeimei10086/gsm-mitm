@@ -66,13 +66,13 @@ cd osmocom-bb/src/host/layer23/src/mobile
 bilibili：https://space.bilibili.com/431312664?spm_id_from=333.1007.0.0  
 有问题来这里找我，本人已高三，可能不能及时回 
 # 查看
-参考论文：张浩 基于USRP的无线移动通信网络隐蔽定点攻击研究 西安电子科技大学 June 2018
+参考论文：张浩 基于USRP的无线移动通信网络隐蔽定点攻击研究 西安电子科技大学 June 2018  
 https://www.doc88.com/p-6314772688570.html?_refluxos=a10
 
-参考报道：如何利用LTE4G伪基站GSM中间人攻击攻破所有短信验证，纯干货！|硬创公开课
+参考报道：如何利用LTE4G伪基站GSM中间人攻击攻破所有短信验证，纯干货！|硬创公开课  
 https://mr.baidu.com/r/1mu2ZKDWZc4?f=cp&u=eaecb9839550917e
 
-参考视频：GSM中间人攻击演示 科技张工
+参考视频：GSM中间人攻击演示 科技张工  
 https://b23.tv/oMYL3BO
 # Finally
 另外两个库里已经讲得够多了,这里就不讲了吧  
