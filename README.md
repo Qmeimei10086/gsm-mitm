@@ -7,3 +7,4 @@
 这也意味着，只要我们拥有IMSI,RAND,SRES这四个数据，即使我们没有sim卡，也可以在真实基站上附着  
 想到这里，我们的GSM中间人攻击计划变呼之欲出了  
 ## 以下为GSM中间人攻击的流程
+![alt text](https://github.com/Qmeimei10086/gsm-mitm/blob/main/gsm-mitm-flow-chart.jpg) 
