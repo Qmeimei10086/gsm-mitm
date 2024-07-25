@@ -22,7 +22,24 @@ https://github.com/Qmeimei10086/mobile-gsm-mitm
 请确保你已经完美安装了上文所说的OpenBTS和mobile 
 接下来，你需要替换OpenBTS可执行文件的目录下的server.py文件  
 在该目录下创建open_mitm文件或者在OpenBTS已运行的情况下运行OpenBTSCLI，并执行mitm_open命令  
-参考: https://github.com/Qmeimei10086/OpenBTS-gsm-mitm  
+参考: https://github.com/Qmeimei10086/OpenBTS-gsm-mitm
+## 使用已编译过的程序
+我依然提供了编译好的程序以及所需的动态链接库 
+```javascript
+#配置OpenBTS
+cd OpenBTS
+cp *.so.* /usr/lib
+chmod +x ./*
+mkdir /etc/OpenBTS
+sqlite3 -init OpenBTS.exmaple.sql /etc/OpenBTS/OpenBTS.db ".quit"
+sqlite3 -init subscriberRegistry.example.sql /etc/OpenBTS/sipauthserve.db ".quit"
+这时候你就可以愉快的修改OpenBTS.db这个配置文件啦
+
+#配置osmocom-bb
+cd mobile
+cp *.so.* /usr/lib
+chmod +x ./*
+```
 # 运行
 开三个终端分别OpenBTS,sipauthserse和server.py，这是伪基站的部分  
 ```javascript
@@ -43,7 +60,21 @@ cd osmocom-bb/src/host/osmocon
 cd osmocom-bb/src/host/layer23/src/mobile
 ./mobile -c default.cfg
 ```
-此时不出意外的攻击手机已经在搜索并附着在基站上了  
+此时不出意外的攻击手机已经在搜索并附着在基站上了    
 
+# 关于作者
+bilibili：https://space.bilibili.com/431312664?spm_id_from=333.1007.0.0  
+有问题来这里找我，本人已高三，可能不能及时回 
+# 查看
+参考论文：张浩 基于USRP的无线移动通信网络隐蔽定点攻击研究 西安电子科技大学 June 2018
+https://www.doc88.com/p-6314772688570.html?_refluxos=a10
 
+参考报道：如何利用LTE4G伪基站GSM中间人攻击攻破所有短信验证，纯干货！|硬创公开课
+https://mr.baidu.com/r/1mu2ZKDWZc4?f=cp&u=eaecb9839550917e
 
+参考视频：GSM中间人攻击演示 科技张工
+https://b23.tv/oMYL3BO
+# Finally
+另外两个库里已经讲得够多了,这里就不讲了吧  
+第一次写教程,多多海涵  
+看我画了这么好看的流程图，给我个star嘛QwQ
