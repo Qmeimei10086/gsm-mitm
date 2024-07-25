@@ -2,3 +2,4 @@
 # 原理
 ## 以下为正常的手机附着基站流程
 
+![alt text](https://github.com/Qmeimei10086/gsm-mitm/blob/main/Attachment-flow-chart.jpg)
