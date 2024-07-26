@@ -4,6 +4,8 @@
 https://github.com/Qmeimei10086/OpenBTS-gsm-mitm  
 ## gsm中间人攻击的攻击手机部分
 https://github.com/Qmeimei10086/mobile-gsm-mitm  
+## 基于摩托罗拉c118的廉价基站搭建
+https://github.com/Qmeimei10086/calypso-bts
 # 原理
 ## 以下为正常的手机附着基站流程
 ![alt text](https://github.com/Qmeimei10086/gsm-mitm/blob/main/Attachment-flow-chart.jpg)  
@@ -28,9 +30,11 @@ https://github.com/Qmeimei10086/mobile-gsm-mitm
 ```javascript
 #配置OpenBTS
 cd OpenBTS
+touch open_mitm
 cp *.so.* /usr/lib
 chmod +x ./*
 mkdir /etc/OpenBTS
+mkdir -p /var/lib/asterisk/sqlite3dir 
 sqlite3 -init OpenBTS.exmaple.sql /etc/OpenBTS/OpenBTS.db ".quit"
 sqlite3 -init subscriberRegistry.example.sql /etc/OpenBTS/sipauthserve.db ".quit"
 这时候你就可以愉快的修改OpenBTS.db这个配置文件啦
@@ -67,7 +71,7 @@ cd osmocom-bb/src/host/layer23/src/mobile
 # 关于作者
 bilibili：https://space.bilibili.com/431312664?spm_id_from=333.1007.0.0  
 有问题来这里找我，本人已高三，可能不能及时回 
-# 查看
+# 参考
 参考论文：张浩 基于USRP的无线移动通信网络隐蔽定点攻击研究 西安电子科技大学 June 2018  
 https://www.doc88.com/p-6314772688570.html?_refluxos=a10
 
